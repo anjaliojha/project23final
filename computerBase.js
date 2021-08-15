@@ -1,4 +1,4 @@
-class computerBase {
+class ComputerBase {
 
     constructor(x, y, width, height){
     var options={
@@ -6,10 +6,10 @@ class computerBase {
     };
    
 
-  this.body=Bodies.rectangle(x,y,width,height,option);
+  this.body=Bodies.rectangle(x,y,width,height,options);
   this.width= width;
-  this.heigth= heigth;
-  this.image= losdImage("assets/base2.png");
+  this.height= height;
+  this.image= loadImage("assets/base2.png");
 
   World.add(world,this.body);
 
@@ -23,7 +23,7 @@ class computerBase {
 var pos = this.body.position;
 var angle = this.body.angle;
 
-Push ();
+push ();
 translate(pos.x,pos.y) ;
 rotate (angle);
 imageMode (CENTER);
