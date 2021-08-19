@@ -9,7 +9,7 @@ class Computerplayer {
   this.body=Bodies.rectangle(x,y,width,height,options);
   this.width= width;
   this.height= height;
-  this.image= loadImage("assets/base1.png");
+  this.image= loadImage("assets/player.png");
 
   World.add(world,this.body);
 

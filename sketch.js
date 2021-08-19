@@ -27,10 +27,10 @@ function setup() {
 	
    //Create Player Base and Computer Base Object
    
-   computerBase = new ComputerBase(400,random(500,height-400),200,200);
-   playerBase = new PlayerBase(300,random(450,height-300),180,150);
-   player= new Player (285,playerBase.body.position.y-153,50,180);
-   computerplayer= new Computerplayer (285,computerBase.body.position.y-153,50,180);
+   computerBase = new ComputerBase(100,random(500,height-400),200,200);
+   playerBase = new PlayerBase(width-200,random(450,height-300),180,150);
+   player= new Player (width-200,playerBase.body.position.y-153,50,180);
+   computerplayer= new Computerplayer (100,computerBase.body.position.y-153,50,180);
 
 
  
